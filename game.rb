@@ -20,8 +20,8 @@ class Game
     # while game is not over
     while !game_over?
       # get the next turn from the turn_manager
-      turn = @turn_manager.next_turn
-
+      @turn_manager.next_turn
+      puts "P1: #{@players[0].player_score} vs P2: #{@players[1].player_score}"
     end
 
     # game is over, print summary
@@ -33,7 +33,7 @@ class Game
     @players[0].dead? || @players[1].dead?
   end
 
-  #prints end game summary
+  # prints end game summary
   def end_game_summary
     winner = nil
     if @players[0].dead?

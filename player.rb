@@ -12,7 +12,7 @@ class Player
   end
 
   def player_score
-    "#{@name}: #{@lives}/3"
+    "#{@lives}/3"
   end
 
   def dead?

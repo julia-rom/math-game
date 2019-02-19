@@ -13,12 +13,13 @@ class TurnManager
   end
 
   def next_turn
-    self.increment_turn
     Turn.new(@current_player, @round_number)
+    self.increment_turn
   end
 
   def increment_turn
     @round_number += 1
-    @current_index = (@current_index + 1) % @players.count
+    @current_index = (@current_index + 1) % (@players.count)
+    @current_player = @players[@current_index]
   end
 end
