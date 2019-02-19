@@ -8,7 +8,7 @@ game = Game.new
 
 puts 'Welcome to the Math game!'
 
-# game.play
+game.play
 
 puts 'Thanks for playing!'
 

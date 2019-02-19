@@ -14,4 +14,8 @@ class Player
   def player_score
     "#{@name}: #{@lives}/3"
   end
+
+  def dead?
+   @lives <= 0
+  end
 end

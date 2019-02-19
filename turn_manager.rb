@@ -15,7 +15,6 @@ class TurnManager
   def next_turn
     self.increment_turn
     Turn.new(@current_player, @round_number)
-    puts '---- NEW TURN -----'
   end
 
   def increment_turn
